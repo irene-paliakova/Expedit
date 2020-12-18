@@ -1,0 +1,326 @@
+@font-face {
+    font-family: Axiforma_Medium; 
+    src: url(fonts/Axiforma-Medium.ttf);
+   }
+
+@font-face {
+    font-family: Axiforma_Semibold; 
+    src: url(fonts/Axiforma-SemiBold.ttf);
+   }
+
+@font-face {
+    font-family: Axiforma_Regular; 
+    src: url(fonts/Axiforma-Regular.ttf);
+   }
+
+@font-face {
+    font-family: Axiforma_Bold; 
+    src: url(fonts/Axiforma-Bold.ttf);
+   }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Axiforma_Medium, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.header {
+    /*position: relative;*/
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-top: 35px;
+    
+}
+
+img.logo {
+    /*position: absolute;
+    top: 20px;
+    left: 100px;*/
+    float: left;
+    margin-left: -200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.request, .login, .search{
+    display: flex;
+    align-items: center;
+}
+
+.request .button {
+    color: #f98277;
+    background-color: #ffffff;
+    border: 2px solid #f98277;
+    padding: 10px 30px;
+    border-radius: 100px;
+}
+
+.nav__button {
+    color: #6e7587;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.login__link {
+    color: #92a4a0;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.form__search {
+    border: 2px solid #92a4a0; 
+    border-radius: 100px;
+    padding: 5px;
+}
+
+input[type="search"] {
+    border: none; 
+    outline: none; 
+    -webkit-appearance: none; 
+    color: #92a4a0;
+    vertical-align: middle; 
+}
+
+input[type="submit"] {
+    width: 30px; 
+    height: 30px; 
+    border: none; 
+    background: url(pic/Icon_search.png) no-repeat 50% 50%; 
+}
+
+
+.first-screen {
+    height: 1220px;
+    background: url("pic/main.png") no-repeat calc(50% + 100px) bottom;
+    background-size: auto;
+}
+
+.first-screen h1 {
+    font-family: Axiforma_Semibold, sans-serif; 
+    color: #ef796e;
+    font-size: 48px;
+    padding-top: 120px;
+    line-height: 55px;
+}
+
+.first-screen__link{
+    color: #525252;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.content__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__column .title {
+    font-size: 36px;
+}
+
+.content__column .subtitle {
+    font-family: Axiforma_Regular, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.content__button {
+    max-width: 100%;
+    font-family: Axiforma_Semibold, sans-serif;
+    font-size: 27px;
+    color: #ffffff;
+    padding: 25px 70px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+}
+
+.content__button_pink {
+    background: linear-gradient(90deg, #ec7f80, #f88fa8);
+}
+
+.content__button_green {
+    background: linear-gradient(90deg, #92a4a0, #a2c1bb);
+}
+
+.advantages {
+    height: 610px;
+    background: #f7f7f7;
+}
+
+.advantages .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icons__card {
+    width: 235px;
+    height: 235px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icons__card:nth-child(2n) {
+    margin-top: 40px;
+}
+
+.icon__name {
+    font-family: Axiforma_Regular, sans-serif;
+    margin-top: 20px;
+}
+
+
+.main__content {
+    max-width: 730px;
+    margin-top: 110px;
+    margin-left: 50px;
+}
+
+.main__title {
+    font-family: Axiforma_Bold, sans-serif;
+    font-size: 33px;
+    line-height: 40px;
+}
+
+.main__subtitle {
+    font-family: Axiforma_Regular, sans-serif;
+    font-size: 23px;
+    margin-top: 40px;
+    letter-spacing: 0.005px;
+    word-spacing: 0.05px;
+}
+
+.clients {
+    background: #fbfbf9;
+}
+
+.clients .wrapper, .lorry .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.phone {
+    max-height: 590px;
+    margin: 10px -200px 0 0;
+}
+
+.clients .main__content {
+    max-width: 600px;
+
+}
+
+.clients .main__subtitle {
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+img.laptop {
+    margin: 40px 0 30px -120px;
+    max-height: 540px;
+}
+
+.lorry .main__content {
+    text-align: right;
+    margin-left: 0;
+}
+
+.lorry .main__subtitle {
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.join {
+    background: linear-gradient(90deg, #ef796e, #f88fa8);
+}
+
+.join .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.join .main__title {
+    margin-top: 110px;
+}
+
+.join .main__subtitle {
+    margin-bottom: 30px;
+}
+
+.join .content__button {
+    border: 2px solid #ffffff;
+    background: none;
+    margin-bottom: 95px;
+}
+
+.footer {
+    background: #e8e8e8;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.contact {
+    text-align: right;
+}
+
+.footer, .footer a {
+    font-family: Axiforma_Regular, sans-serif;
+    color: #999999;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
